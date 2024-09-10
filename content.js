@@ -1,3 +1,5 @@
+const browser = chrome || browser;
+
 browser.runtime.onMessage.addListener((message) => {
   if (message.action === "showTrustStatus") {
     const categorizations = message.categorization.split('-').map(c => c.trim()).join('\n- ');

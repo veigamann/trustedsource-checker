@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "TrustedSource Link Checker",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Check if a link is trusted by trustedsource.org",
   "permissions": [
     "contextMenus",
@@ -11,7 +11,8 @@
   "background": {
     "scripts": [
       "background.js"
-    ]
+    ],
+    "persistent": false
   },
   "content_scripts": [
     {

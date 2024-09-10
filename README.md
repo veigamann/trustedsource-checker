@@ -1,6 +1,6 @@
 # TrustedSource Link Checker
 
-A Firefox extension that allows users to check the trustworthiness of URLs using TrustedSource.org's API. This extension adds a context menu item to easily check links or selected text against various TrustedSource products.
+A browser extension that allows users to check the trustworthiness of URLs using TrustedSource.org's API. This extension adds a context menu item to easily check links or selected text against various TrustedSource products. It works with Firefox, Chrome, and other Chromium-based browsers like Edge.
 
 ## Features
 
@@ -8,13 +8,25 @@ A Firefox extension that allows users to check the trustworthiness of URLs using
 - Support for multiple TrustedSource products
 - Displays URL status, categorization, and reputation
 - Easy to use and integrate into your browsing workflow
+- Cross-browser compatibility (Firefox, Chrome, Edge, and other Chromium-based browsers)
 
 ## Installation
+
+### Firefox
 
 1. Clone this repository or download the source code.
 2. Open Firefox and navigate to `about:debugging`.
 3. Click on "This Firefox" in the left sidebar.
 4. Click on "Load Temporary Add-on" and select the `manifest.json` file from the extension directory.
+
+### Chrome, Edge, and other Chromium-based browsers
+
+1. Clone this repository or download the source code.
+2. Open your Chromium-based browser and navigate to the extensions page:
+   - Chrome: `chrome://extensions`
+   - Edge: `edge://extensions`
+3. Enable "Developer mode" using the toggle switch in the top right corner.
+4. Click on "Load unpacked" and select the directory containing the extension files.
 
 ## Usage
 
@@ -35,13 +47,13 @@ A Firefox extension that allows users to check the trustworthiness of URLs using
 
 ## Development
 
-This extension is built using WebExtensions API. The main components are:
+This extension is built using WebExtensions API, which provides cross-browser compatibility. The main components are:
 
 - `manifest.json`: Extension metadata and permissions
 - `background.js`: Handles context menu creation and API requests
 - `content.js`: Displays results on the active tab
 
-To modify the extension, edit these files and reload the extension in `about:debugging`.
+To modify the extension, edit these files and reload the extension in your browser's extension management page.
 
 ## Contributing
 

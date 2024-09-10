@@ -8,6 +8,8 @@ const products = [
   { id: "07-xl-1", name: "Trellix SmartFilter 4.2 (XL-1)" }
 ];
 
+const browser = chrome || browser;
+
 browser.contextMenus.create({
   id: "check-trustedsource",
   title: "Check TrustedSource",
